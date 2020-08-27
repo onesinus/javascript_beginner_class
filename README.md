@@ -1,2 +1,2 @@
-# javascript_beginner_class
+# Javascript Beginner Class
 Javascript beginner class learning materials
