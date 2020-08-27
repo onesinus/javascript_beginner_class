@@ -44,4 +44,4 @@ Buatlah sebuah kode javascript sederhana untuk menampung sebuah nama, usia, dan 
 ### Install text editor and Node JS
 
 ## Reference
-https://www.javascript.com/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
