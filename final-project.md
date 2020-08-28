@@ -13,7 +13,7 @@ Sejauh ini kalian sudah belajar:
 
 Tiba saatnya kalian mencoba untuk membuat game sederhana dengan HTML, CSS dan tentunya Javascript!
 Oiya untuk game gunting batu kertas ini, pemain akan melawan komputer, dimana komputer akan memilih secara random antara gunting,
-batu atau keras, dan setiap yang menang akan ditambahkan 1 point...
+batu atau kertas, dan setiap yang menang akan ditambahkan 1 point...
 
 Contoh final project: https://onesinus.github.io/scipaprock.github.io/
 
