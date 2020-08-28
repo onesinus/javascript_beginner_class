@@ -17,7 +17,7 @@ Javascript beginner class learning materials
 
 [Course 7: Membuat aplikasi sederhana part II](course-7.md)
 
-[Final Project: Membuat CV Online](final-project.md)
+[Final Project: Membuat Game Gunting Batu Kertas Online](final-project.md)
 
 ## Pedoman Belajar
 https://developer.mozilla.org/en-US/ (MDN web docs -> Resources for developers, by developers)
