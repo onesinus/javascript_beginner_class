@@ -9,7 +9,7 @@ Javascript beginner class learning materials
 
 [Course 3: Fungsi](course-3.md)
 
-[Course 4: Document Object Model(DOM)](course-4.md)
+[Course 4: Document Object Model(DOM) & Event](course-4.md)
 
 [Course 5: Library & Framework Javascript](course-5.md)
 
