@@ -21,6 +21,8 @@ Isi file **main.css** dengan kode berikut ini
 
 ```
 
+Buka file **index.html** menggunakan browser dan akan tampil hasil dari kode html dan css yang kita sudah buat.
+
 Kita sudah siap dengan tampilan sederhana kita, berikutnya kita akan membuat kode javascript untuk menampilkan data yang dicari.... :round_pushpin:
 
 ## Exercise :muscle:
@@ -28,5 +30,6 @@ Improve / ubah tampilan sesuai selera dan kreatifitas masing-masing
 
 ## Next course preparation :100:
 ### Persiapkan tentang bagaimana looping di javascript seperti for dan lain-lain.
+### Persiapkan tentang kondisi dalam javascript seperti if else, switch case, dan lain-lain.
 
 ## Reference
