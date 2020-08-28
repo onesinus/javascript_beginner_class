@@ -19,5 +19,7 @@ Javascript beginner class learning materials
 
 [Final Project: Membuat Game Gunting Batu Kertas Online](final-project.md)
 
+Demo final project: https://onesinus.github.io/scipaprock.github.io/
+
 ## Pedoman Belajar
 https://developer.mozilla.org/en-US/ (MDN web docs -> Resources for developers, by developers)
