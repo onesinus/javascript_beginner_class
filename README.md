@@ -13,9 +13,9 @@ Javascript beginner class learning materials
 
 [Course 5: Library & Framework Javascript](course-5.md)
 
-[Course 6: Membuat aplikasi sederhana part I](course-6.md)
+[Course 6: Membuat project javascript pertama - Search Engine App (Membuat tampilan)](course-6.md)
 
-[Course 7: Membuat aplikasi sederhana part II](course-7.md)
+[Course 7: Membuat project javascript pertama - Search Engine App (Membuat kode javascript)](course-7.md)
 
 [Final Project: Membuat Game Gunting Batu Kertas Online](final-project.md)
 
