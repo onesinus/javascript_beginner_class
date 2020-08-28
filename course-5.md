@@ -41,7 +41,7 @@ Note:
 Cari dan temukan framework favorit mu!
 
 ## Next course preparation :100:
-### Persiapan untuk membuat project sederhana javascript pertama kita.
+### Persiapan untuk membuat project sederhana javascript pertama kita (no framework).
 
 ## Reference
 https://hackr.io/blog/best-javascript-frameworks
