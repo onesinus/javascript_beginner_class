@@ -30,6 +30,7 @@ const data = [
 
 // Kita akan mendefinisikan selector-selector yang kita perlukan
 const btnSearch 	= document.getElementById('btnSearch');
+const btnClear 		= document.getElementById('btnClear');
 const search 		= document.getElementsByName('keyword')[0];
 const data_section 	= document.getElementsByClassName('data')[0];
 
@@ -48,6 +49,10 @@ btnSearch.addEventListener('click', event => {
 			data_section.innerHTML += "<a href='#'>"+data_filtered[i]+"</a>";
 		}
 	}
+});
+
+btnClear.addEventListener('click', event => {
+	search.value = "";
 });
 ```
 
