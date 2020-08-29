@@ -18,7 +18,37 @@ Kemudian jangan lupa untuk memanggil file main.js difile **index.html** dengan m
 Isi file **main.js** dengan kode berikut ini
 
 ```javascript
+// Kita buat data dummy untuk pencarian data
+// Nantinya data ini akan diambil dari database
+const data = [
+	'How to become JS expert',
+	'JS is Javascript',
+	'Coding is Fun',
+	'Programmer do coding everyday',
+	'Everyday is fun'
+];
 
+// Kita akan mendefinisikan selector-selector yang kita perlukan
+const btnSearch 	= document.getElementById('btnSearch');
+const search 		= document.getElementsByName('keyword')[0];
+const data_section 	= document.getElementsByClassName('data')[0];
+
+// Kita membuat event-event yang diperlukan, seperti on click pada button search
+btnSearch.addEventListener('click', event => {
+	const search_value 	= search.value.toLowerCase();
+
+	// Copy array data ke variable data_filtered
+	const data_filtered = data.slice(0);
+
+	// Lakukan perulangan pada semua data untuk cek apakah ada yang mengandung "keyword" atau tidak
+	data_section.innerHTML = "";
+	for (var i = 0; i < data_filtered.length; i++) {
+		if ( data_filtered[i].toLowerCase().includes(search_value) ) {			
+			// Jika ada, Masukkan data ke list data pencarian yang didapat
+			data_section.innerHTML += "<a href='#'>"+data_filtered[i]+"</a>";
+		}
+	}
+});
 ```
 
 Sekarang mari coba ketik kata kunci dan lakukan pencarian data.... :round_pushpin:
