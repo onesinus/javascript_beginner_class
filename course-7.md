@@ -34,8 +34,25 @@ const btnClear 		= document.getElementById('btnClear');
 const search 		= document.getElementsByName('keyword')[0];
 const data_section 	= document.getElementsByClassName('data')[0];
 
-// Kita membuat event-event yang diperlukan, seperti on click pada button search
+// Membuat event untuk handle tombol search ketika diklik
 btnSearch.addEventListener('click', event => {
+	searchData();
+});
+
+// Membuat event untuk handle tombol clear input diklik
+btnClear.addEventListener('click', event => {
+	search.value = "";
+});
+
+// Membuat event ketika menekan enter pada inputan search
+search.addEventListener('keyup', event => {
+	if (event.keyCode === 13) {
+		searchData();
+	}
+});
+
+// fungsi untuk melakukan pencarian data
+function searchData() {
 	const search_value 	= search.value.toLowerCase();
 
 	// Copy array data ke variable data_filtered
@@ -48,12 +65,8 @@ btnSearch.addEventListener('click', event => {
 			// Jika ada, Masukkan data ke list data pencarian yang didapat
 			data_section.innerHTML += "<a href='#'>"+data_filtered[i]+"</a>";
 		}
-	}
-});
-
-btnClear.addEventListener('click', event => {
-	search.value = "";
-});
+	}	
+}
 ```
 
 Sekarang mari coba ketik kata kunci dan lakukan pencarian data.... :round_pushpin:
