@@ -27,6 +27,7 @@ isi **index.html** dengan kode berikut
 <div class="bunga">Mawar</div>
 <div class="bunga">Melati</div>
 <span>Semuanya Indah</span>
+<script src="main.js"></script>
 ```
 
 isi **main.js** dengan kode berikut
