@@ -23,10 +23,11 @@ Sekarang mari kita coba buat sebuah folder bernama **belajar_dom** dan buat dida
 isi **index.html** dengan kode berikut
 
 ```html
-<div id="hello">Hello World</div>
+<div id="hello">Hello</div>
 <div class="bunga">Mawar</div>
 <div class="bunga">Melati</div>
-<span>Semuanya Indah</span>
+<span>Semuanya</span>
+<span>Indah</span>
 <script src="main.js"></script>
 ```
 
@@ -34,17 +35,18 @@ isi **main.js** dengan kode berikut
 
 ```javascript
 window.addEventListener('load', (event) => {
-  const hello = document.getElementById("helo");
-  let current_value = hello.getAttribute('value');
-  hello.innerHTML = current_value + "Hello Javascript!";
-  
-  const all_span = document.getElementsByTagName("span");
-  console.log(all_span[0].innerHTML);
-  
-  var bunga = document.getElementsByClassName('bunga'); // get all elements with class 'bunga'
-	for(var i = 0; i < bunga.length; i++){
-		bunga[i].style.backgroundColor = "red";
-	}
+    const hello = document.getElementById("hello");
+    const current_value = hello.innerText;
+    hello.innerHTML = current_value + " World!";
+
+    const spans = document.getElementsByTagName("span");
+    console.log(spans[0].innerHTML)
+    console.log(spans[1].innerHTML)
+
+    var bunga = document.getElementsByClassName('bunga');
+    for (let i = 0; i < bunga.length; i++) {
+        bunga[i].style.backgroundColor = "red";
+    }
 });
 ```
 
