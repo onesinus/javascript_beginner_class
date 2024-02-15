@@ -102,3 +102,58 @@ Buatlah sebuah kotak dan 3 buah tombol (merah, kuning, hijau) dan buatlah ketika
 ## Reference
 https://developer.mozilla.org/en-US/docs/Glossary/DOM
 https://developer.mozilla.org/en-US/docs/Web/Events
+
+### Additional codes
+#### events.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body onload="onBrowserLoad()">
+    <input onchange="onChangeFirstName(event)" type="text" id="inputNamaDepan" placeholder="Nama Depan">
+    <input onchange="onChangeLastName(event)" type="text" id="inputNamaBelakang" placeholder="Nama Belakang">
+    <button onclick="onButtonClick()" id="btnOK">
+        Nama Lengkap
+    </button>
+    <span onmouseover="tampilkanNamaLengkap()" id="namaLengkap"></span>
+
+    <script src="events.js"></script>
+    <script>
+        function onBrowserLoad() {
+            console.log("Browser udah kelar ngeload nich...")
+        }
+    </script>
+</body>
+
+</html>
+```
+#### events.js
+```javascript
+var nama_depan = ""
+var nama_belakang = ""
+var nama_lengkap = ""
+
+function onChangeFirstName(event) {
+    nama_depan = event.target.value
+}
+
+function onChangeLastName(event) {
+    nama_belakang = event.target.value
+}
+
+function onButtonClick() {
+    nama_lengkap = nama_depan + " " + nama_belakang
+    document.getElementById("namaLengkap").innerText = nama_lengkap
+}
+
+function tampilkanNamaLengkap() {
+    alert(nama_lengkap)
+}
+```

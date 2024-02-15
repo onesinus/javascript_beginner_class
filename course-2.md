@@ -132,3 +132,32 @@ var merek = {
 };
 console.log(merek)
 ```
+### Arithmetic
+```javascript
+var angka1 = 11
+var angka2 = 2
+
+console.log(angka1 + angka2) // 13 
+console.log(angka1 - angka2) // 9
+console.log(angka1 * angka2) // 22
+console.log(angka1 / angka2) // 5.5
+console.log(7 / 3)
+console.log((7 / 3).toFixed(2))
+
+
+console.log("===== MODULO / MODULUS => HASIL SISA BAGI")
+console.log(angka1 % angka2) // 1
+console.log(2 % 2) // 0
+console.log(2 % 1) // 0
+console.log(2 % 0) // NaN
+console.log(2 % 3) // 2
+console.log(3 % 2) // 1
+
+// Extra note
+// CEIL => Aproximasi ke atas 
+// ROUND => Aproximasi ke atas / bawa
+// FLOOR => Aproximasi ke bawah
+console.log(Math.ceil(7 / 3))
+console.log(Math.round(7 / 3))
+console.log(Math.floor(7 / 3))
+```
