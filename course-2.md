@@ -85,3 +85,50 @@ Buatlah sebuah file bernama tipe_data.js yang berisi kode penerapan tipe-tipe da
 
 ## Reference
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
+
+### Additional Codes
+```javascript
+var namaBarang = "Tumbler";
+var tinggi = 12;
+var lingkaran = 5;
+var kegunaan = ["Air panas", "Air Dingin", "Air Mentah"];
+var merek = {
+    nama: ["Strubuk", "makkopi"],
+    jumlah: ["12pcs", "15pcs"],
+    harga: [50000, 75000],
+};
+console.log(namaBarang);
+console.log(tinggi);
+console.log(lingkaran);
+console.log(kegunaan);
+console.log(merek.nama[0], ": ", merek.jumlah[0], merek.harga[0]);
+
+// Ones
+var siswa = {
+    "name": "Onesinus",
+    "age": 17,
+    "kambing hitam": 12
+}
+console.log(siswa["kambing hitam"])
+
+var merek = {
+    "Strubuk": {
+        "nama": "Strubuk",
+        "jumlah": "12 pcs",
+        "harga": 50000
+    },
+    "makkopi": {
+        "nama": "Makkopi",
+        "jumlah": "15 pcs",
+        "harga": 75000
+    }
+};
+console.log(merek)
+
+
+var merek = {
+    "Strubuk": ["Strubuk", "12 pcs", 50000],
+    "makkopi": ["Makkopi", "15 pcs", 75000]
+};
+console.log(merek)
+```
