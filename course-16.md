@@ -63,6 +63,33 @@ tidak_terpenuhi
 console.log(tidak_terpenuhi)
 ```
 
+## Other Promise Examples
+```javascript
+let myPromise = new Promise(function(resolve, reject) {
+  let x = 1; // change this to 0 to get resolved response
+  
+  if (x == 0) {
+    resolve("OK");
+  } else {
+    reject("Error");
+  }
+});
+
+myPromise.then(
+  function(value) { console.log(value) },
+  function(error) { console.error(error) }
+);
+```
+```javascript
+const myPromise2 = new Promise(function(resolve, reject) {
+  setTimeout(function(){ resolve("I love You !!"); }, 3000);
+});
+
+myPromise2.then(function(value) {
+  console.log(value)
+});
+```
+
 ## Async Paralel
 ```javascript
 const firstPromise = () => {
